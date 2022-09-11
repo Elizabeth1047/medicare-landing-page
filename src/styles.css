@@ -1,0 +1,535 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+     
+}
+body{
+    width: 100%;
+    
+}
+
+.nav{
+    width: 95%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    
+}
+
+.sec{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    align-items: center;
+    
+}
+.in{
+    
+    display: flex;
+
+    
+}
+
+.sec a{
+    text-decoration: none;
+    color: black;
+}
+.sec input{
+    padding: 10px;
+    height: 30px;
+    
+}
+.img2 img{
+    position: relative;
+    left: -50px;
+    top: 4px;
+    width: 80%;
+    
+}
+.i{
+    position: relative;
+    left: -90px;
+    top: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.header{
+    text-align: center;
+    width: 95%;
+    margin:  auto;
+    padding-top: 20px;
+    
+}
+.imgss img{
+   max-width: 200px;
+}
+.secs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-weight: bolder;
+}
+.firsthr{
+    width: 95%;
+    margin:  auto;
+    
+}
+.today{
+    width: 95%;
+    margin:  auto;
+    
+}
+.today h1{
+    font-size: 45px;
+    font-weight: normal;
+   margin: 20px auto;
+    letter-spacing: 3px;
+}
+.sesecs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+   padding: 10px 0px 10px 0px;
+}
+.red{
+    color: red;
+    font-weight: bold;
+}
+.intal{
+    font-style: italic;
+}
+.co{
+    color: #1B524C;
+
+}
+.weird{
+   display: flex;
+
+}
+
+.astr img{
+    width: 10px;
+
+}
+.smallb img{
+    text-align: center;
+    width: 5%;
+    margin:  auto;
+    margin-top: 20px;
+
+}
+.upr img{
+    width: 100%;
+    max-width: 15px;
+}
+.news{
+     background-image : url('../img/unsplash_3ewkNkfJj2k.png') ;
+     height: 50vh;
+     background-size: cover;
+     background-repeat: no-repeat;
+     width: 100%;
+}
+.sm img{
+   max-width: 150px;
+}
+.widt{
+    width: 95%;
+    margin: auto;
+   padding-top: 40px;
+}
+.text{
+    display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.text h3{
+    font-weight: normal;
+    font-size: 25px;
+}
+.widt h2{
+    margin-top: 20px;
+    max-width: 580px;
+    font-weight: normal;
+    font-size: 30px;
+}
+.btn{
+    background-color: #007CB0;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 40px 0px;
+    font-size: 18px;
+}
+.para{
+    font-size: 20px;
+}
+.para a{
+    color: #007CB0 ;
+    text-decoration: none;
+}
+ .widtr{
+    width: 95%;
+    margin: 20px auto;
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.mag img{
+    width: 100%;
+    max-width: 350px;
+}
+.imgtexs{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.texts1{
+     width: 100%;
+     max-width: 400px;
+     
+     
+}
+.p{
+    margin-bottom: 10px;
+} 
+.pp{
+    
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.texts1 h1{
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+.fist{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.fist1 .h3{
+    max-width: 350px;
+    margin: auto;
+}
+.medicare{
+    margin: 20px auto;
+    color: #00000099;
+font-size: 13px;
+    
+}
+.medicare span{
+    font-style: italic;
+    
+}
+.firp{
+    color: #1B524C;
+;
+    
+}
+.second{
+    margin-top: 20px;
+    
+}
+.gridsec{
+    width: 95%;
+    margin: auto;
+    
+}
+.fistgr{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+    
+}
+.headsec{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    
+    
+}
+.headsec h1{
+    font-weight: normal;
+    
+    
+}
+.headsec a{
+    text-decoration: none;
+    color: #007CB0;
+    font-weight: bold;
+
+    
+    
+}
+.itd{
+    width: 95%;
+   margin: auto;
+    
+}
+.gridwrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,400px);
+    justify-content: space-between;
+    
+}
+.dot{
+   width: 30px;
+   margin: auto;
+   position: relative;
+   top: 30px;
+
+    
+}
+.gradient{
+background: linear-gradient(89.84deg, #DFE8F1 30.51%, rgba(223, 232, 241, 0.66) 61.95%, rgba(223, 232, 241, 0.49) 99.86%);
+;
+  padding-top: 20px;  
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    
+}
+.arrow span{
+    font-weight: normal;
+    
+}
+.cards{
+    width: 95%;
+    margin:  auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    padding-top: 20px;
+
+    
+}
+.card{
+    background-color: white;
+    max-width: 250px;
+    text-align: center;
+    padding: 30px;
+
+    
+}
+.bold{
+    color: #E24949B2;
+ font-size: 40px;
+
+    
+}
+
+.arr{
+    font-weight: normal;
+}
+.for{
+    width: 95%;
+    margin: auto;
+    
+}
+.omn{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+.omn img{
+    width: 100%;
+    max-width: 120px;
+    
+}
+.tres{
+    max-width: 130px;
+}
+.om{
+    display: flex;
+     align-items: center;
+    gap: 10px;
+}
+.medicares{
+    margin: 10px auto;
+    color: #00000099;
+font-size: 12px;
+
+    
+}
+.scroll{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 100px;
+    padding-bottom: 60px;
+}
+.dotted{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: grey;
+}
+.bl{
+    background-color: #007CB0;
+}
+.essentials,
+.report{
+    background: linear-gradient(89.84deg, #DFE8F1 30.51%, rgba(223, 232, 241, 0.66) 61.95%, rgba(223, 232, 241, 0.49) 99.86%);
+padding-bottom: 40px;
+}
+.forw{
+    width: 95%;
+    margin:  auto;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.ppp{
+    font-weight: normal;
+    font-size: 28px;
+    margin-bottom: 30px;
+    
+}
+.hag img{
+    width: 100%;
+    min-width: 400px;
+}
+.hagtext{
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    height: 20vh;
+}
+.myca{
+    max-width: 700px;
+}
+.myc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   gap: 20px;
+    overflow-x: hidden;
+    width: 100%;
+}
+.bo{
+    border: 1px solid  #1B524C;
+;
+    padding: 10px;
+}
+.allc{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+.allcc{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.mycards{
+    display: flex;
+   justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.mycard{
+    display: flex;
+   flex-direction: column;
+   max-width: 250px;
+   margin-top: 20px;
+    
+    
+}
+.ss{
+    width: 95%;
+    margin:20px auto;
+}
+.hagg img{
+    width: 100%;
+    max-width: 250px;
+}
+.sp{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.md{
+   font-size: 35px;
+   color: #007CB0;
+   margin-bottom: 10px;
+}
+.mdtext{
+   font-size: 16.5px;
+   margin-top: 15px;
+}
+.meda{
+   font-size: 15px;
+   display: flex;
+   justify-content: flex-end;
+   gap: 10px;
+   margin-top: 40px;
+   padding-bottom: 40px;
+}
+.meda a{
+   color: #007CB0;
+   text-decoration: none;
+   font-weight: bold;
+}
+.col{
+    background-color: #007CB0;
+    height: 5px;
+}
+.sociallinks{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.allf{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+    flex-wrap: wrap;
+    
+}
+.allf p{
+    margin-top: 30px;
+    
+}
+.last{
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/* @media (min-width:768px){
+.nav{
+    flex-direction: row;
+    
+   
+}
+
+.sec{
+    
+    flex-direction: row;
+    
+}
+} */
