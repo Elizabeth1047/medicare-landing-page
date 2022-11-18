@@ -659,8 +659,7 @@ overflow: hidden; */
 
   }
   .hove{
-  margin: 20px;
-  padding: 20px;
+  padding: 10px;
 }
 .menubtn,
  .menuline {
@@ -673,20 +672,21 @@ overflow: hidden; */
   display: block;
 }
 .z {
-  margin: 20px;
-  padding: 10px;
+  margin: 15px;
  } 
 .dropdown{
   display: none;
   position: fixed;
   left: 40%;
   background-color: white;
+  overflow-y: scroll;
 }
 .show{
   display: block;
 }
 .t,
-.u {
+.u,
+.i {
   display: none;
 }
 .widtr {
