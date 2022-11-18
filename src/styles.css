@@ -70,54 +70,7 @@ body {
   max-width: 200px;
 }
  
-/* hambuger logo */
-.menubtn,
- .menuline {
-  display: none;
-}
 
-.header .menuline,
-.header .ned .menuline {
-  padding: 28px 35px;
-  position: relative;
-  float: right;
-  cursor: pointer;
-}
-.header .menuline .navline,
-.header .ned .menuline .navline {
-  background: #007cb0;
-  display: block;
-  height: 2px;
-  width: 30px;
-  position: relative;
-  transition: background 0.2s ease-out;
-}
-.header .menuline .navline:before,
-.header .ned .menuline .navline:before {
-  background: red;
-  content: "";
-  display: block;
-  height: 100%;
-  width: 70%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  top: 5px;
-}
-
-.header .menuline .navline:after,
-.header .ned .menuline .navline:after {
-  background: grey;
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  top: -5px;
-}
-
-
-/* end */
 .secs {
   display: flex;
   flex-wrap: wrap;
@@ -635,6 +588,70 @@ overflow: hidden; */
      .fixed{
   position: fixed;
      }
+     /* hambuger logo */
+
+.header .menuline,
+.header .ned .menuline {
+  padding: 28px 35px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+.header .menuline .navline,
+.header .ned .menuline .navline {
+  background: #007cb0;
+  display: block;
+  height: 2px;
+  width: 30px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+.header .menuline .navline:before,
+.header .ned .menuline .navline:before {
+  background: red;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 70%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: 5px;
+}
+
+.header .menuline .navline:after,
+.header .ned .menuline .navline:after {
+  background: grey;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: -5px;
+}
+.header .menubtn:checked ~ .menu,
+.header .ned .menubtn:checked ~ .menu {
+  min-height: 100vh;
+  text-align: center;
+}
+.header .menubtn:checked ~ .menuline .navline,
+.header .ned .menubtn:checked ~ .menuline .navline {
+  background: transparent;
+}
+
+.header .menubtn:checked ~ .menuline .navline:before,
+.header .ned .menubtn:checked ~ .menuline .navline:before {
+  transform: rotate(-45deg);
+  top: 0%;
+}
+.header .menubtn:checked ~ .menuline .navline:after,
+.header .ned .menubtn:checked ~ .menuline .navline:after {
+  transform: rotate(45deg);
+  top: 0%;
+}
+
+
+/* end */
 
   .tie{
     background-color: white;
@@ -661,10 +678,11 @@ overflow: hidden; */
   .hove{
   padding: 10px;
 }
-.menubtn,
- .menuline {
-  display: block;
+.menubtn {
+  display: none;
 }
+
+
   .shown{
   display: block;
 }
@@ -720,4 +738,6 @@ padding-bottom: 50px;
 .scroll,.wonder {
 display: none;
 }
+
+
 }
