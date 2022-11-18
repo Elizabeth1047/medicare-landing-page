@@ -1,3 +1,4 @@
+/* section 1  general styles */
 * {
   margin: 0px;
   padding: 0px;
@@ -11,6 +12,8 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+
+/* section 1  nav */
 .nav {
   width: 95%;
   margin: 0px auto;
@@ -31,13 +34,12 @@ body {
   gap: 20px;
   align-items: center;
 }
-.in {
-  display: flex;
-}
-
 .sec a {
   text-decoration: none;
   color: black;
+}
+.in {
+  display: flex;
 }
 .sec input {
   padding: 10px;
@@ -56,19 +58,66 @@ body {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+/* section 2  header */
 .header {
   text-align: center;
   width: 95%;
   margin: auto;
   padding-top: 20px;
+  
 }
-.upst {
-  display: none;
-}
-
 .imgss img {
   max-width: 200px;
 }
+ 
+/* hambuger logo */
+.menubtn,
+ .menuline {
+  display: none;
+}
+
+.header .menuline,
+.header .ned .menuline {
+  padding: 28px 35px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+.header .menuline .navline,
+.header .ned .menuline .navline {
+  background: #007cb0;
+  display: block;
+  height: 2px;
+  width: 30px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+.header .menuline .navline:before,
+.header .ned .menuline .navline:before {
+  background: red;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 70%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: 5px;
+}
+
+.header .menuline .navline:after,
+.header .ned .menuline .navline:after {
+  background: grey;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  top: -5px;
+}
+
+
+/* end */
 .secs {
   display: flex;
   flex-wrap: wrap;
@@ -76,10 +125,12 @@ body {
   gap: 20px;
   font-weight: bolder;
 }
+/* hr */
 .firsthr {
   width: 95%;
   margin: auto;
 }
+/* section 3  today */
 .today {
   width: 95%;
   margin: auto;
@@ -90,6 +141,7 @@ body {
   margin: 20px auto;
   letter-spacing: 3px;
 }
+
 .sesecs {
   display: flex;
   flex-wrap: wrap;
@@ -100,29 +152,22 @@ body {
   color: red;
   font-weight: bold;
 }
-.intal {
-  font-style: italic;
-}
-.co {
-  color: #1b524c;
-}
-.weird {
-  display: flex;
+.dropdown{
+  display: none;
 }
 
-.astr img {
-  width: 10px;
-}
-.smallb img {
-  text-align: center;
-  width: 5%;
-  margin: auto;
-  margin-top: 20px;
-}
 .upr img {
   width: 100%;
   max-width: 15px;
 }
+
+
+.weird {
+  display: flex;
+}
+
+
+/* section 4  news */
 .news {
   width: 100%;
   background-image: url("../img/unsplash_3ewkNkfJj2k.png");
@@ -130,9 +175,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.sm img {
-  max-width: 150px;
-}
+
+
 .widt {
   width: 95%;
   margin: auto;
@@ -142,6 +186,9 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.sm img {
+  max-width: 150px;
 }
 .text h3 {
   font-weight: normal;
@@ -170,6 +217,7 @@ body {
   color: #007cb0;
   text-decoration: none;
 }
+/* section 5  called widtr */
 .widtr {
   width: 95%;
   margin: 20px auto;
@@ -177,64 +225,72 @@ body {
   justify-content: space-between;
   
 }
-.mag img {
-  width: 100%;
-  max-width: 350px;
-}
 .imgtexs {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   
 }
+.mag img {
+  width: 100%;
+  max-width: 350px;
+}
+
 .texts1 {
   width: 100%;
   max-width: 400px;
 }
-.p {
-  margin-bottom: 10px;
-}
-.pp {
-  margin-bottom: 20px;
-  font-size: 22px;
-}
 .texts1 h1 {
   margin-bottom: 10px;
   font-size: 28px;
-}
-.fist {
-  display: flex;
-  justify-content: space-between;
-  
-}
-.fist1 .h3 {
-  max-width: 350px;
-  margin: auto;
 }
 .medicare {
   margin: 20px auto;
   color: #00000099;
   font-size: 13px;
 }
-.medicare span {
+.medicare span,
+.intal {
   font-style: italic;
 }
-.firp {
-  color: #1b524c;
+/* .p {
+  margin-bottom: 10px;
+} */
+.pp {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.fist {
+  display: flex;
+  justify-content: space-between;
+  
 }
 .second {
   margin-top: 20px;
 }
-.gridsec {
+.co {
+  color: #1b524c;
+}
+.fist1 .h3 {
+  max-width: 350px;
+  margin: auto;
+}
+.smallb img {
+  text-align: center;
+  width: 5%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* hr */
+.itd {
   width: 95%;
   margin: auto;
 }
-.fistgr {
-  display: flex;
- 
-  justify-content: space-between;
-  border-bottom: 1px solid grey;
-  margin-bottom: 20px;
+/* section 6  called gridsec */
+.gridsec {
+  width: 95%;
+  margin: auto;
 }
 .headsec {
   display: flex;
@@ -251,25 +307,35 @@ body {
   color: #007cb0;
   font-weight: bold;
 }
-.dotss {
-  display: flex;
-  gap: 10px;
-}
-.itd {
-  width: 95%;
-  margin: auto;
+.astr img {
+  width: 10px;
 }
 .gridwrap {
   display: grid;
   grid-template-columns: repeat(auto-fit, 400px);
   justify-content: space-around ;
 }
+
+.fistgr {
+  display: flex;
+ 
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  margin-bottom: 20px;
+}
+.firp {
+  color: #1b524c;
+}
+
+
+
 .dot {
   width: 30px;
   margin: auto;
   position: relative;
   top: 30px;
 }
+/* section 7  gradient */
 .gradient {
   background: linear-gradient(
     89.84deg,
@@ -306,10 +372,11 @@ body {
   color: #e24949b2;
   font-size: 40px;
 }
-
+/* section 6  columist */
 .arr {
   font-weight: normal;
 }
+/* section 7  columist */
 .for {
   width: 95%;
   margin: auto;
@@ -357,6 +424,10 @@ body {
   margin-top: 100px;
   padding-bottom: 60px;
 }
+.dotss {
+  display: flex;
+  gap: 10px;
+}
 .dotted {
   height: 8px;
   width: 8px;
@@ -366,6 +437,7 @@ body {
 .bl {
   background-color: #007cb0;
 }
+/* section 7  second columinst */
 .essentials {
   background: linear-gradient(
     89.84deg,
@@ -377,15 +449,6 @@ body {
   /* position: relative;
 height: 100px;
 overflow: hidden; */
-}
-.report {
-  background: linear-gradient(
-    89.84deg,
-    #dfe8f1 30.51%,
-    rgba(223, 232, 241, 0.66) 61.95%,
-    rgba(223, 232, 241, 0.49) 99.86%
-  );
-  padding-bottom: 40px;
 }
 .forw {
   width: 95%;
@@ -420,16 +483,7 @@ overflow: hidden; */
   top: 40%;
 }
 
-.hag img {
-  width: 100%;
-  min-width: 400px;
-}
-.hagtext {
-  background-color: white;
-  text-align: center;
-  padding: 10px;
-  height: 20vh;
-}
+
 .myca {
   max-width: 700px;
 }
@@ -443,6 +497,18 @@ overflow: hidden; */
   /* height: 100%; */
   /* position: absolute; */
 }
+
+.hag img {
+  width: 100%;
+  min-width: 400px;
+}
+.hagtext {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  height: 20vh;
+}
+
 .bo {
   border: 1px solid #1b524c;
   padding: 10px;
@@ -459,6 +525,15 @@ overflow: hidden; */
   align-items: center;
   flex-wrap: wrap;
 }
+.report {
+  background: linear-gradient(
+    89.84deg,
+    #dfe8f1 30.51%,
+    rgba(223, 232, 241, 0.66) 61.95%,
+    rgba(223, 232, 241, 0.49) 99.86%
+  );
+  padding-bottom: 40px;
+} 
 .mycards {
   display: flex;
   justify-content: space-between;
@@ -543,7 +618,7 @@ overflow: hidden; */
   background-color: #007cb0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1240px) {
 
   * {
     text-align: center;
@@ -553,44 +628,64 @@ overflow: hidden; */
     flex-direction: column;
   }
   .header{
-    display: flex;
-     justify-content: space-around;
-  }
-  .how{
-    display: flex;
-   align-items: flex-end;
-   justify-content: flex-start;
-    flex-direction: column;
-    
-  }
-  .text {
-  
+    background-color: white;
+  width: 100%;
+  z-index: 5;
+     }
+     .fixed{
+  position: fixed;
+     }
+
+  .tie{
+    background-color: white;
+ display: none;
+     position: fixed;
+     width: 100vw;
+     height: 100vh;
+     z-index: 5;
+     }
+  .text{ 
   display: block;
 }
-  
+.helo{ 
+  display: flex;
+  justify-content: space-between;
+}
+
   .secs{
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-     position: fixed;
-     top: 200px; 
-    background-color: grey;
-    padding: 30px;
-    width: 100%;
-    max-width: 200px;
-    z-index: 2;
+  display: block;
+  margin: 40px;
     /* border-radius: 50% 0 0 50%; */
 
   }
-  .shown{
-  display: flex;
+  .hove{
+  margin: 20px;
+  padding: 20px;
 }
-  
-  .upst {
+.menubtn,
+ .menuline {
   display: block;
 }
-.sesecs {
+  .shown{
+  display: block;
+}
+.show{
+  display: block;
+}
+.z {
+  margin: 20px;
+  padding: 10px;
+ } 
+.dropdown{
+  display: none;
+  position: fixed;
+  left: 80%;
+  background-color: white;
+}
+.show{
+  display: block;
+}
+.t {
   display: none;
 }
 .widtr {
@@ -609,13 +704,19 @@ overflow: hidden; */
   flex-wrap: wrap;
 }
 .fistgr {
- 
-  flex-wrap: wrap;
+ flex-wrap: wrap;
   
 }
 .om {
  padding-left: 0px;
   flex-wrap: wrap;
   
+}
+.omn,.myc {
+padding-bottom: 50px;
+ overflow-x: auto;
+}
+.scroll,.wonder {
+display: none;
 }
 }

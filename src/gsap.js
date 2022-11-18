@@ -1,29 +1,30 @@
  const tl = gsap.timeline({ dafault: {} });
  
-tl.from(".imgss", {
-  y: "-50",
-  ease: "elastic(1,0.3)",
-  duration: 1.5,
-  opacity: 0,
-}).from(".gt", {
-  y: "50",
-  ease: "power4.inOut",
-  duration: 1,
-  stagger: 1,
-  opacity: 0,
-}).from(".sesecs", {
-  y: "50",
-  ease: "power4.inOut",
-  duration: 1,
-  stagger: 1,
-  opacity: 0,
-}).from(".s", {
-  x: "-50",
-  ease: "power4.inOut",
-  duration: 1.5,
-  stagger: 1,
-  opacity: 0,
-});
+// tl.from(".imgss", {
+//   y: "-50",
+//   ease: "elastic(1,0.3)",
+//   duration: 1.5,
+//   opacity: 0,
+// }).from(".gt", {
+//   y: "50",
+//   ease: "power4.inOut",
+//   duration: 1,
+//   stagger: 1,
+//   opacity: 0,
+// }).from(".sesecs", {
+//   y: "50",
+//   ease: "power4.inOut",
+//   duration: 1,
+//   stagger: 1,
+//   opacity: 0,
+// })
+// .from(".s", {
+//   x: "-50",
+//   ease: "power4.inOut",
+//   duration: 1.5,
+//   stagger: 1,
+//   opacity: 0,
+// });
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -83,20 +84,20 @@ gsap.from(".x", {
   opacity: 0,
   duration: 2,
 });
-gsap.from(".z", {
-  scrollTrigger: {
-    trigger: ".z",
-    toggleActions: "restart reverse restart reverse",
-    start: "10% 40%",
-    end: "250% top",
-    // markers: true,
-  },
-  y: "50",
-  ease: "power4.inOut",
-  stagger: 1,
-  opacity: 0,
-  duration: 2,
-});
+// gsap.from(".z", {
+//   scrollTrigger: {
+//     trigger: ".z",
+//     toggleActions: "restart reverse restart reverse",
+//     start: "10% 40%",
+//     end: "250% top",
+//     // markers: true,
+//   },
+//   y: "50",
+//   ease: "power4.inOut",
+//   stagger: 1,
+//   opacity: 0,
+//   duration: 2,
+// });
 
 
 // gsap.from(".yy", {

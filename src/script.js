@@ -1,56 +1,65 @@
-let pointer = document.querySelector(".upst");
-let secsss = document.querySelector(".secs");
-console.log(secsss);
+let pointer = document.querySelector(".menuline");
+let secsss = document.querySelector(".tie");
+let bodyss = document.querySelector(".header");
+let bodys = document.querySelector("body");
+let point = document.querySelector(".upr");
+let droper = document.querySelector(".dropdown");
+console.log(point);
+console.log(droper);
 
 pointer.addEventListener("click", () => {
+  // console.log("lizzy");
   secsss.classList.toggle("shown");
-  }
-);
+  bodys.classList.toggle("fixed");
+});
+
+point.addEventListener("click", () => {
+  console.log("lizzy");
+  // droper.style.display=("block")
+  droper.classList.toggle("show");
+  console.log("lizzysss");
+});
 
 let secss = document.querySelector(".secs");
 let arr = Array.from(secss.children);
 let forward = document.getElementById("forward");
 let forward2 = document.getElementById("for");
-console.log(forward2);
+// console.log(forward2);
 let backward = document.getElementById("backward");
 let backward2 = document.getElementById("back");
-console.log(backward2);
+// console.log(backward2);
 let gen2 = document.querySelector(".myc");
-console.log(gen2);
+
+// console.log(gen2);
 let gen = document.querySelector(".omn");
+
 let image = Array.from(gen.children);
 let firstdot = document.getElementsByClassName("b");
 let seconddot = document.getElementsByClassName("l");
- console.log(seconddot);
+// console.log(seconddot);
 let spots = 0;
 let spotss = 0;
-let respot = 6;
-let respotss=3;
 
-
-function enterspot() {
-  let dots = Array.from(firstdot);
-  dots[spots].classList.add("blues");
+let dots = Array.from(firstdot);
+let dotes = Array.from(seconddot);
+function enterspot(ele) {
+  ele[spots].classList.add("blues");
   spots += 1;
-
 }
-function enterspot1() {
-  let dotes = Array.from(seconddot);
-  dotes[spotss].classList.add("blues");
+
+function removespot(ele) {
+  spots -= 1;
+  ele[spots].classList.remove("blues");
+}
+
+function enterspot1(eles) {
+  eles[spotss].classList.add("blues");
   spotss += 1;
 }
 
-function removespot() {
-  let dots = Array.from(firstdot);
-  respot -= 1;
-  console.log(respot);
-  dots[respot].classList.remove("blues");
-}
-function removespot2() {
-  let dotes = Array.from(seconddot);
-  respotss -= 1;
-  console.log(respot);
-  dotes[respotss].classList.remove("blues");
+function removespot2(eles) {
+  spotss -= 1;
+  eles[spotss].classList.remove("blues");
 }
 
 arr.map((ar) => {
@@ -66,63 +75,58 @@ arr.map((ar) => {
 });
 let count = 25;
 let count2 = 32;
-let dr = 4;
-let imagex=image.length
-console.log(imagex)
+let imagex = image.length;
+// console.log(imagex);
 let drr = 3;
 
-
-
- function forwar() {
-   gen.style.left = -count + "vw";
-   count += 22;
-  enterspot();
-   
- }
-
- function forwar2() {
-   gen2.style.left = -count2 + "vw";
-   count2 += 30;
-   enterspot1();
- }
-
-function backwar() {
-  console.log(count);
-  count += -22;
+function forwar(c) {
   gen.style.left = -count + "vw";
-  removespot();
-} 
-
-
-function backwar2() {
-  console.log(count2);
-  count2 += -30;
-  gen2.style.left = -count2 + "vw";
-  removespot2();
+  count += c;
 }
-
+function backwar(c) {
+  count += -c;
+  gen.style.left = -count + "vw";
+  
+}
+function forwar2(d) {
+  gen2.style.left = -count2 + "vw";
+  count2 += d;
+  
+}
+function backwar2(d) {
+  count2 += -d;
+  gen2.style.left = -count2 + "vw";
+  
+}
 forward.addEventListener("click", () => {
-  if ( dr <= 8) {
-    dr++;
-    forwar(gen,count,22);
-  }
-});
-forward2.addEventListener("click", () => {
-  if ( drr <= 4) {
-    drr++;
-    forwar2(gen2, count2, 30);
+  if (count >= 25 && count < 135) {
+    // console.log("lizzy");
+    forwar(22)
+    enterspot(dots);
   }
 });
 
 backward.addEventListener("click", () => {
-  if (dr >= 4 ) {
-    dr--;
-    backwar();
+  if (count > 25) {
+    // console.log("bat");
+    backwar(47);
+    removespot(dots);
+    count += 25;
   }
 });
+
+forward2.addEventListener("click", () => {
+  if (count2 >= 32 && count2 < 92) {
+    forwar2(30);
+    enterspot1(dotes);
+
+  }
+});
+
 backward2.addEventListener("click", () => {
-  if (drr >= 3 ) {
-    drr--;
-    backwar2();
+  if (count2 > 32) {
+    backwar2(62);
+    count2 += 32;
+    removespot2(dotes);
   }
 });
