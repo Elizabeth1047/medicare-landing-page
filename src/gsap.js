@@ -56,34 +56,34 @@ gsap.registerPlugin(ScrollTrigger);
 //   duration: 2,
 // });
 
-gsap.from(".y", {
-  scrollTrigger: {
-    trigger: ".y",
-    toggleActions: "restart reverse restart reverse",
-    start: "10% 40%",
-    end: "250% top",
-    //  markers: true,
-  },
-  x: "-50",
-  ease: "power4.inOut",
-  stagger: 1,
-  opacity: 0,
-  duration: 2,
-});
-gsap.from(".x", {
-  scrollTrigger: {
-    trigger: ".x",
-    toggleActions: "restart reverse restart reverse",
-    start: "10% 40%",
-    end: "250% top",
-    // markers: true,
-  },
-  y: "-50",
-  ease: "power4.inOut",
-  stagger: 1,
-  opacity: 0,
-  duration: 2,
-});
+// gsap.from(".y", {
+//   scrollTrigger: {
+//     trigger: ".y",
+//     toggleActions: "restart reverse restart reverse",
+//     start: "10% 40%",
+//     end: "250% top",
+//     //  markers: true,
+//   },
+//   x: "-50",
+//   ease: "power4.inOut",
+//   stagger: 1,
+//   opacity: 0,
+//   duration: 2,
+// });
+// gsap.from(".y", {
+//   scrollTrigger: {
+//     trigger: ".y",
+//     toggleActions: "restart reverse restart reverse",
+//     start: "10% 40%",
+//     end: "250% top",
+//     // markers: true,
+//   },
+//   y: "-50",
+//   ease: "power4.inOut",
+//   stagger: 1,
+//   opacity: 0,
+//   duration: 2,
+// });
 // gsap.from(".z", {
 //   scrollTrigger: {
 //     trigger: ".z",
