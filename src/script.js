@@ -17,6 +17,7 @@ point.addEventListener("click", () => {
   console.log("lizzy");
   // droper.style.display=("block")
   droper.classList.toggle("show");
+  bodys.classList.toggle("fixed");
   console.log("lizzysss");
 });
 
