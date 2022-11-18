@@ -144,7 +144,7 @@ body {
 
 .sesecs {
   display: flex;
-  flex-wrap: wrap;
+  
   gap: 14px;
   padding: 10px 0px 10px 0px;
 }
@@ -679,13 +679,14 @@ overflow: hidden; */
 .dropdown{
   display: none;
   position: fixed;
-  left: 80%;
+  left: 40%;
   background-color: white;
 }
 .show{
   display: block;
 }
-.t {
+.t,
+.u {
   display: none;
 }
 .widtr {
