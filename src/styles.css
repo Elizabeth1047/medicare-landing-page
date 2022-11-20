@@ -1,6 +1,5 @@
 /* section 1  general styles */
 * {
-  margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   /*border: 1px solid red;
@@ -12,11 +11,10 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-
 /* section 1  nav */
 .nav {
   width: 95%;
-  margin: 0px auto;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -64,12 +62,13 @@ body {
   width: 95%;
   margin: auto;
   padding-top: 20px;
-  
 }
 .imgss img {
   max-width: 200px;
 }
- 
+.menubtn {
+  display: none;
+}
 
 .secs {
   display: flex;
@@ -97,7 +96,7 @@ body {
 
 .sesecs {
   display: flex;
-  
+align-items: center;
   gap: 14px;
   padding: 10px 0px 10px 0px;
 }
@@ -105,7 +104,7 @@ body {
   color: red;
   font-weight: bold;
 }
-.dropdown{
+.dropdown {
   display: none;
 }
 
@@ -114,11 +113,9 @@ body {
   max-width: 15px;
 }
 
-
 .weird {
   display: flex;
 }
-
 
 /* section 4  news */
 .news {
@@ -128,7 +125,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 
 .widt {
   width: 95%;
@@ -176,13 +172,11 @@ body {
   margin: 20px auto;
   display: flex;
   justify-content: space-between;
-  
 }
 .imgtexs {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  
 }
 .mag img {
   width: 100%;
@@ -216,7 +210,6 @@ body {
 .fist {
   display: flex;
   justify-content: space-between;
-  
 }
 .second {
   margin-top: 20px;
@@ -266,12 +259,12 @@ body {
 .gridwrap {
   display: grid;
   grid-template-columns: repeat(auto-fit, 400px);
-  justify-content: space-around ;
+  justify-content: space-around;
 }
 
 .fistgr {
   display: flex;
- 
+  align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid grey;
   margin-bottom: 20px;
@@ -279,8 +272,6 @@ body {
 .firp {
   color: #1b524c;
 }
-
-
 
 .dot {
   width: 30px;
@@ -436,7 +427,6 @@ overflow: hidden; */
   top: 40%;
 }
 
-
 .myca {
   max-width: 700px;
 }
@@ -471,7 +461,6 @@ overflow: hidden; */
   margin: auto;
   display: flex;
   justify-content: space-between;
-  
 }
 .allcc {
   display: flex;
@@ -486,7 +475,7 @@ overflow: hidden; */
     rgba(223, 232, 241, 0.49) 99.86%
   );
   padding-bottom: 40px;
-} 
+}
 .mycards {
   display: flex;
   justify-content: space-between;
@@ -550,7 +539,7 @@ overflow: hidden; */
 }
 .allf p {
   margin-top: 30px;
-} 
+}
 .last {
   text-align: center;
   font-size: 12px;
@@ -572,172 +561,209 @@ overflow: hidden; */
 }
 
 @media (max-width: 1240px) {
-
   * {
     text-align: center;
-    margin: auto;
+  }
+  .nav {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .sec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   .allf {
     flex-direction: column;
   }
-  .header{
+  .header {
     background-color: white;
-  width: 100%;
-  z-index: 5;
-     }
-     .fixed{
-  position: fixed;
-     }
-     /* hambuger logo */
-
-.header .menuline,
-.header .ned .menuline {
-  padding: 28px 35px;
-  position: relative;
-  float: right;
-  cursor: pointer;
-}
-.header .menuline .navline,
-.header .ned .menuline .navline {
-  background: #007cb0;
-  display: block;
-  height: 2px;
-  width: 30px;
-  position: relative;
-  transition: background 0.2s ease-out;
-}
-.header .menuline .navline:before,
-.header .ned .menuline .navline:before {
-  background: red;
-  content: "";
-  display: block;
-  height: 100%;
-  width: 70%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  top: 5px;
-}
-
-.header .menuline .navline:after,
-.header .ned .menuline .navline:after {
-  background: grey;
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  top: -5px;
-}
-.header .menubtn:checked ~ .menu,
-.header .ned .menubtn:checked ~ .menu {
-  min-height: 100vh;
-  text-align: center;
-}
-.header .menubtn:checked ~ .menuline .navline,
-.header .ned .menubtn:checked ~ .menuline .navline {
-  background: transparent;
-}
-
-.header .menubtn:checked ~ .menuline .navline:before,
-.header .ned .menubtn:checked ~ .menuline .navline:before {
-  transform: rotate(-45deg);
-  top: 0%;
-}
-.header .menubtn:checked ~ .menuline .navline:after,
-.header .ned .menubtn:checked ~ .menuline .navline:after {
-  transform: rotate(45deg);
-  top: 0%;
-}
-
-
-/* end */
-
-  .tie{
-    background-color: white;
- display: none;
-     position: fixed;
-     width: 100vw;
-     height: 100vh;
-     z-index: 5;
-     }
-  .text{ 
-  display: block;
-}
-.helo{ 
-  display: flex;
-  justify-content: space-between;
-}
-
-  .secs{
-  display: block;
-  margin: 40px;
-    /* border-radius: 50% 0 0 50%; */
-
+    width: 100%;
+    z-index: 5;
   }
-  .hove{
-  padding: 10px;
-}
-.menubtn {
-  display: none;
-}
+  .fixed {
+    position: fixed;
+  }
+  /* hambuger logo */
 
+  .header .menuline,
+  .header .ned .menuline {
+    padding: 28px 35px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+  }
+  .header .menuline .navline,
+  .header .ned .menuline .navline {
+    background: #007cb0;
+    display: block;
+    height: 2px;
+    width: 30px;
+    position: relative;
+    transition: background 0.2s ease-out;
+  }
+  .header .menuline .navline:before,
+  .header .ned .menuline .navline:before {
+    background: red;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    top: 5px;
+  }
 
-  .shown{
-  display: block;
-}
-.show{
-  display: block;
-}
-.z {
-  margin: 15px;
- } 
-.dropdown{
-  display: none;
-  position: fixed;
-  left: 40%;
-  background-color: white;
-  overflow-y: scroll;
-}
-.show{
-  display: block;
-}
-.t,
-.u,
-.i {
-  display: none;
-}
-.widtr {
-  flex-direction: column;
-  
-}
-.imgtexs {
- flex-wrap: wrap;
-  
-}
-.cards {
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.allc {
-  flex-wrap: wrap;
-}
-.fistgr {
- flex-wrap: wrap;
-  
-}
-.om {
- padding-left: 0px;
-  flex-wrap: wrap;
-  
-}
-.omn,.myc {
-padding-bottom: 50px;
- overflow-x: auto;
-}
-.scroll,.wonder {
-display: none;
-}
+  .header .menuline .navline:after,
+  .header .ned .menuline .navline:after {
+    background: grey;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    top: -5px;
+  }
+  .header .menubtn:checked ~ .menu,
+  .header .ned .menubtn:checked ~ .menu {
+    min-height: 100vh;
+    text-align: center;
+  }
+  .header .menubtn:checked ~ .menuline .navline,
+  .header .ned .menubtn:checked ~ .menuline .navline {
+    background: transparent;
+  }
 
+  .header .menubtn:checked ~ .menuline .navline:before,
+  .header .ned .menubtn:checked ~ .menuline .navline:before {
+    transform: rotate(-45deg);
+    top: 0%;
+  }
+  .header .menubtn:checked ~ .menuline .navline:after,
+  .header .ned .menubtn:checked ~ .menuline .navline:after {
+    transform: rotate(45deg);
+    top: 0%;
+  }
 
+  /* end */
+
+  .tie {
+    background-color: white;
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+  }
+  .text {
+    display: block;
+  }
+  .widt h2 {
+    text-align: center;
+  }
+  .widt {
+    text-align: center;
+  }
+  .helo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .secs {
+    display: block;
+    margin: 40px;
+    /* border-radius: 50% 0 0 50%; */
+  }
+  .hove {
+    padding: 10px;
+  }
+  .menubtn {
+    display: none;
+  }
+
+  .shown {
+    display: block;
+  }
+
+  .z {
+    margin: 15px;
+  }
+  .dropdown {
+    display: none;
+    position: fixed;
+    left: 40%;
+    background-color: white;
+    overflow-y: scroll;
+  }
+
+  .t,
+  .u,
+  .i {
+    display: none;
+  }
+  .widtr {
+    flex-direction: column;
+  }
+  .imgtexs {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .tbtn {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .cards {
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .mycards {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .allc {
+    flex-wrap: wrap;
+  }
+
+  .om {
+    padding-left: 0px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .omn,
+  .myc {
+    padding-bottom: 50px;
+    overflow-x: auto;
+  }
+  .scroll,
+  .wonder {
+    display: none;
+  }
+  .sesecs hr {
+    display: none;
+  }
+  .sesecs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sociallinks {
+    align-items: center;
+    justify-content: center;
+  }
+  .gridsec {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .allf p {
+    margin-top: 0px;
+  }
 }

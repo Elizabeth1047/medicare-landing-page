@@ -4,8 +4,9 @@ let bodyss = document.querySelector(".header");
 let bodys = document.querySelector("body");
 let point = document.querySelector(".upr");
 let droper = document.querySelector(".dropdown");
-console.log(point);
-console.log(droper);
+let wid = document.querySelector(".widt");
+console.log(wid);
+//console.log(droper);
 
 pointer.addEventListener("click", () => {
   // console.log("lizzy");
@@ -17,9 +18,12 @@ point.addEventListener("click", () => {
   console.log("lizzy");
   // droper.style.display=("block")
   droper.classList.toggle("show");
-  bodys.classList.toggle("fixed");
   console.log("lizzysss");
 });
+// wid.addEventListener("click", () => {
+//   // console.log("lizzy");
+//   droper.classList.add("tbtn");
+// });
 
 let secss = document.querySelector(".secs");
 let arr = Array.from(secss.children);
@@ -87,22 +91,19 @@ function forwar(c) {
 function backwar(c) {
   count += -c;
   gen.style.left = -count + "vw";
-  
 }
 function forwar2(d) {
   gen2.style.left = -count2 + "vw";
   count2 += d;
-  
 }
 function backwar2(d) {
   count2 += -d;
   gen2.style.left = -count2 + "vw";
-  
 }
 forward.addEventListener("click", () => {
   if (count >= 25 && count < 135) {
     // console.log("lizzy");
-    forwar(22)
+    forwar(22);
     enterspot(dots);
   }
 });
@@ -120,7 +121,6 @@ forward2.addEventListener("click", () => {
   if (count2 >= 32 && count2 < 92) {
     forwar2(30);
     enterspot1(dotes);
-
   }
 });
 
